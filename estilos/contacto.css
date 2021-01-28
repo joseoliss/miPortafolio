@@ -1,0 +1,168 @@
+.contacto{
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    background: rgb(63, 110, 141);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f1f1f1, #f1f1f1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f1f1f1, #f1f1f1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacto .p {
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.contacto-izq{
+    display: inline;
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.contacto-izq p{
+    margin-left: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    
+}
+
+.contacto-izq a{
+    text-decoration: none;
+}
+
+
+.form-der{
+    display: block;
+    width: 60%;
+    height: 100%;
+    float: left;
+    margin: auto;
+}
+
+.error{
+    margin-top: 50px;
+    width: 90%;
+    height: 40px;
+    background:  rgb(250, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.exito{
+    margin-top: 50px;
+    width: 90%;
+    height: 40px;
+    background:  rgb(20, 160, 0);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mensajeForm p{
+    padding-top: 20px;
+}
+
+.txt {
+    display: block;
+    margin-top: 50px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid rgb(41, 155, 149);
+    background: transparent;
+    outline: none;
+    color: #000;
+    font-size: 16px;
+    
+}
+
+.txt:hover{
+    box-shadow: 0 5px 0  rgb(41, 155, 149);
+}
+
+input[type="text"]{
+    height: 40px;
+}
+
+textarea{
+    height: 80px;
+}
+
+.btn_enviar{
+    margin: 50px 10px 0 0;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 40px;
+    background:  rgb(41, 155, 149);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    float: left;
+}
+
+.btn_enviar:hover{
+    outline: 1px;
+    background:  rgb(22, 83, 80);
+}
+
+.footer{
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    padding: 20px 0 0 20px;
+}
+
+@media screen and (max-width:800px){
+    .contacto-izq{
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+
+    .form-der{
+        width: 100%;
+        height: 50%;
+        display: block;
+        text-align: center;
+    }
+
+    .txt { 
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .btn_enviar{
+        display: block;
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .error{
+       margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .exito{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+}

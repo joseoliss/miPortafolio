@@ -1,0 +1,35 @@
+.conocimientos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.conocimientos  .p{
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.conocimientos div img{
+    width: 140px;
+    height: 100px;
+}
+
+.conocimientos div{
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    margin: 25px 20px ;
+    background: rgb(31, 100, 117);
+    box-shadow: 5px 5px 5px rgb(141, 141, 141);
+    border-radius: 2%;
+}
+
+@media screen and (max-width:800px){
+    .conocimientos{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+    }
+}
