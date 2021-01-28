@@ -5,29 +5,17 @@ document.getElementById('form-der').addEventListener('submit', (e) => {
     let asunto = document.getElementById('txt_asunto').value;
     let mensaje = document.getElementById('txt_mensaje').value;
 
-    if (nombre != "") {
-        if (correo != "") {
-            if (asunto != "") {
-                if (mensaje != "") {
-                    reg = /[a-zA-Z0-9\.\-\_]+\@[a-zA-Z0-9]+\.[a-zA-Z0-9]/;
-                    if (reg.test(correo.toLowerCase())) {
-                        document.getElementById('form-der').reset();
-                        alert("De momento esta funcionalidad se encuentra inactiva!")
-                        mensajeForm("Correo enviado exitosamente", true);
-                    } else {
-                        mensajeForm("Correo invalido", false);
-                    }
-                } else {
-                    mensajeForm("Debe digitar un mensaje", false);
-                }
-            } else {
-                mensajeForm("Digite un asunto", false);
-            }
+    if (nombre != "" || correo != "" || asunto != "" || mensaje != "") {
+        reg = /[a-zA-Z0-9\.\-\_]+\@[a-zA-Z0-9]+\.[a-zA-Z0-9]/;
+        if (reg.test(correo.toLowerCase())) {
+            document.getElementById('form-der').reset();
+            alert("De momento esta funcionalidad se encuentra inactiva!")
+            mensajeForm("Correo enviado exitosamente", true);
         } else {
-            mensajeForm("Digite un correo electrónico", false);
+            mensajeForm("Correo invalido", false);
         }
     } else {
-        mensajeForm("Digite un nombre", false);
+        mensajeForm("Por favor complete el formulario", false);
     }
 
 })
