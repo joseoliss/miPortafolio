@@ -4,53 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <title>José Andrés Solís</title>
     <link rel="icon" href="https://img.icons8.com/ios/452/portfolio.png" />
     <link rel="stylesheet" href="estilos/principal.css">
     <link rel="stylesheet" href="estilos/sobreMi.css">
     <link rel="stylesheet" href="estilos/conocimientos.css">
     <link rel="stylesheet" href="estilos/contacto.css">
-    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+    <!-- Font oswald -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="btn-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
     <section class="principal">
         <header id="inicio" class="header">
-            <div>
-                <a href="#" class="btn-menu"><i class="fas fa-bars"></i>Menu</a>
-            </div>
-            <nav id="nav" class="nav">
+            <nav id="nav" class="nav show">
                 <ul id="ul">
-                    <div>
-                        <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="#sobreMi"></i><i class="fas fa-user"></i>Sobre mi</a></li>
-                        <li><a href="#conocimientos"><i class="fas fa-book-open"></i>Tecnologías</a></li>
-                        <li><a href="#contacto"><i class="fas fa-paper-plane"></i>Contacto</a></li>
-                    </div>
-                    <div class="redes">
-                        <li>
-                            <a href="https://www.linkedin.com/in/jose-andres-solis-camacho-027816199/"
-                                target="_blank"><i class="fab fa-linkedin"></i></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/joseoliss" target="_blank"><i class="fab fa-github"></i></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/joseoliss/" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/joseoliss/" target="_blank"><i
-                                    class="fab fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="mailto:joseoliss.2002@gmail.com" target="_blank"><i
-                                    class="fas fa-envelope"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/50686452426" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        </li>
-                    </div>
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#sobreMi"></i><i class="fas fa-user"></i> Sobre mi</a></li>
+                    <li><a href="#conocimientos"><i class="fas fa-book-open"></i> Tecnologías</a></li>
+                    <li><a href="#contacto"><i class="fas fa-paper-plane"></i> Contacto</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jose-andres-solis-camacho-027816199/" target="_blank"><i
+                                class="fab fa-linkedin"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/joseoliss" target="_blank"><i class="fab fa-github"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:joseoliss97@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/50686452426" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -68,28 +63,29 @@
             <img class="foto"></img>
         </div>
         <div class="contenedor-der">
-            <img>
-            <p class="p">¿Quien soy?</p>
-            <h3>Sobre mi</h3>
-            <p>
-               Soy estudiante de ingeniería en sistemas en la universidad americana, estoy
-                por terminar el bachillerato, me encantaría poder entrar a formar parte de una
-                empresa en la que poder aplicar todos mis conocimientos y habilidades y, al mismo
-                tiempo, que me permita desarrollarme profesionalmente.
-                Soy una persona proactiva, me gustan los retos y siempre estoy en constante
-                aprendizaje para mejorar día a día.
-            </p>
-            <h3>Educación</h3>
-            <p>
-                Bachiller en Ingeniería de Sistemas
-                Universidad Americana
-                (2017 – Actual)
-            </p>
-            <p>
-                Bachiller en Educación media
-                CTP San Juan Sur
-                (2016)
-            </p>
+            <div>
+                <img>
+                <p class="p">¿Quien soy?</p>
+                <p>
+                    Estudiante de ingeniería en sistemas en la universidad americana, estoy
+                    por terminar el bachillerato, me gustaría poder entrar a formar parte de una
+                    empresa en la que poder aplicar todos mis conocimientos y habilidades y, al mismo
+                    tiempo, que me permita desarrollarme profesionalmente.
+                    Soy una persona proactiva, me gustan los retos y siempre estoy en constante
+                    aprendizaje para mejorar día a día.
+                </p>
+                <h3>Educación</h3>
+                <p>
+                    Bachiller en Ingeniería de Sistemas
+                    Universidad Americana
+                    (2017 – Actual)
+                </p>
+                <p>
+                    Bachiller en Educación media
+                    CTP San Juan Sur
+                    (2016)
+                </p>
+            </div>
         </div>
     </section>
 
@@ -151,8 +147,8 @@
         <p class="p">Contacto</p>
         <div class="contacto-izq">
             <p><i class="fas fa-map-marker-alt"></i> Frailes, Desamparados</p>
-            <a href="mailto:joseoliss.2002@gmail.com" target="_blank">
-                <p><i class="fas fa-envelope"></i> joseoliss.2002@gmail.com</p>
+            <a href="mailto:joseoliss97@gmail.com" target="_blank">
+                <p><i class="fas fa-envelope"></i> joseoliss97@gmail.com</p>
             </a>
             <p><i class="fas fa-phone-alt"></i> 8645-2426</p>
             <a href="https://wa.me/50686452426" target="_blank">
@@ -174,6 +170,9 @@
         &copy; joseoliss 2021
     </footer>
 
+    <!-- scripts -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/40b7719c81.js" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
     <script src="js/enviarMail.js"></script>

@@ -1,16 +1,16 @@
-.sobreMi{
+.sobreMi {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
-.contenedor-izq{
+.contenedor-izq {
     display: inline;
     width: 30%;
     height: 100%;
     float: left;
 }
 
-.contenedor-izq p{
+.contenedor-izq p {
     text-align: center;
     margin-top: 40%;
     margin-bottom: 50px;
@@ -18,8 +18,8 @@
     font-size: 40px;
 }
 
-.foto{
-    display: block ;
+.foto {
+    display: block;
     margin: auto;
     width: 200px;
     height: 200px;
@@ -30,49 +30,47 @@
     border-radius: 2%;
 }
 
-.contenedor-der{
+.contenedor-der {
+    padding-top: 100px;
     display: inline;
     width: 70%;
     height: 100%;
     float: left;
 }
 
-.contenedor-der h3{
+.contenedor-der h3 {
     text-align: center;
 }
 
-.contenedor-der p{
+.contenedor-der p {
     text-align: center;
     margin: 60px;
     color: #000;
 }
 
-.contenedor-der .p{
+.contenedor-der .p {
     display: none;
 }
 
-@media screen and (max-width:800px){
-    .contenedor-izq{
+@media screen and (max-width:800px) {
+    .contenedor-izq {
         display: none;
     }
-
-    .contenedor-der{
+    .contenedor-der {
         display: block;
         width: auto;
         height: 100%;
         float: left;
         text-align: center;
     }
-
-    .contenedor-der .p{
+    .contenedor-der .p {
         display: block;
-        color:#000;
+        color: #000;
         font-size: 40px;
         text-align: center;
     }
-
-    .contenedor-der img{
-        display: block ;
+    .contenedor-der img {
+        display: block;
         margin: 30px auto;
         width: 200px;
         height: 200px;
@@ -82,10 +80,8 @@
         box-shadow: 10px 10px 5px rgba(37, 41, 43, 0.568);
         border-radius: 2px;
     }
-
-    .sobreMi{
+    .sobreMi {
         width: 100%;
         height: auto;
     }
-
 }

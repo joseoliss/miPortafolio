@@ -1,28 +1,40 @@
-let menu = document.querySelector('.btn-menu');
-let nav = document.getElementById('nav')
-let cont = 1;
-
-
-menu.addEventListener("click", () => {
-    if (cont == 1) {
-        nav.style.display = "none";
-        cont = 0;
-    } else {
-        nav.style.display = "block";
-        cont = 1;
-    }
-})
-
+const menu = document.querySelector('.btn-menu');
+const nav = document.getElementById('nav');
 
 window.addEventListener('resize', () => {
-    nav.style.display = "block";
-})
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 600) {
+    if (window.innerWidth < 800) {
         nav.style.background = "#141E30";
-        nav.style.transition = "800ms";
     } else {
         nav.style.background = "none";
     }
-}); 
+})
+
+window.addEventListener('load', () => {
+    if (window.innerWidth < 800) {
+        nav.style.background = "#141E30";
+    } else {
+        nav.style.background = "none";
+    }
+})
+
+menu.addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('show');
+});
+
+window.addEventListener("scroll", () => {
+    if (window.innerWidth > 800) {
+        if (window.scrollY > 600) {
+            nav.style.background = "#141E30";
+            nav.style.transition = "800ms";
+        } else {
+            nav.style.background = "none";
+        }
+    }
+
+});
+
+ScrollReveal().reveal('.principal', { delay: 250 });
+ScrollReveal().reveal('.sobreMi', { delay: 250 });
+ScrollReveal().reveal('.conocimientos', { delay: 250 });
+ScrollReveal().reveal('.contacto', { delay: 250 });
+ScrollReveal().reveal('.footer', { delay: 250 });

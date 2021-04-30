@@ -1,4 +1,4 @@
-.contacto{
+.contacto {
     margin-top: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,9 +6,12 @@
     width: 100%;
     height: auto;
     padding-bottom: 50px;
-    background: rgb(63, 110, 141);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f1f1f1, #f1f1f1);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f1f1f1, #f1f1f1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(63, 110, 141);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f1f1f1, #f1f1f1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f1f1f1, #f1f1f1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contacto .p {
@@ -17,28 +20,26 @@
     text-align: center;
 }
 
-.contacto-izq{
+.contacto-izq {
     display: inline;
     width: 40%;
     height: 100%;
     float: left;
 }
 
-.contacto-izq p{
+.contacto-izq p {
     margin-left: 10px;
     display: block;
     text-align: center;
     margin-top: 50px;
     color: #000;
-    
 }
 
-.contacto-izq a{
+.contacto-izq a {
     text-decoration: none;
 }
 
-
-.form-der{
+.form-der {
     display: block;
     width: 60%;
     height: 100%;
@@ -46,33 +47,36 @@
     margin: auto;
 }
 
-.error{
+.error {
     margin-top: 50px;
     width: 90%;
     height: 40px;
-    background:  rgb(250, 0, 0);
+    background: rgb(250, 0, 0);
     color: #fff;
     font-size: 16px;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
-.exito{
+.exito {
     margin-top: 50px;
     width: 90%;
     height: 40px;
-    background:  rgb(20, 160, 0);
+    background: rgb(20, 160, 0);
     color: #fff;
     font-size: 16px;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
-.mensajeForm p{
+.mensajeForm p {
     padding-top: 20px;
 }
 
 .txt {
+    font-family: 'Oswald', sans-serif;
     display: block;
     margin-top: 50px;
     width: 90%;
@@ -82,40 +86,39 @@
     outline: none;
     color: #000;
     font-size: 16px;
-    
 }
 
-.txt:hover{
-    box-shadow: 0 5px 0  rgb(41, 155, 149);
+.txt:hover {
+    box-shadow: 0 5px 0 rgb(41, 155, 149);
 }
 
-input[type="text"]{
+input[type="text"] {
     height: 40px;
 }
 
-textarea{
+textarea {
     height: 80px;
 }
 
-.btn_enviar{
+.btn_enviar {
     margin: 50px 10px 0 0;
     border: none;
     outline: none;
     width: 90%;
     height: 40px;
-    background:  rgb(41, 155, 149);
+    background: rgb(41, 155, 149);
     color: #fff;
     font-size: 16px;
     border-radius: 20px;
     float: left;
 }
 
-.btn_enviar:hover{
+.btn_enviar:hover {
     outline: 1px;
-    background:  rgb(22, 83, 80);
+    background: rgb(22, 83, 80);
 }
 
-.footer{
+.footer {
     height: 40px;
     text-align: center;
     color: #fff;
@@ -123,46 +126,40 @@ textarea{
     padding: 20px 0 0 20px;
 }
 
-@media screen and (max-width:800px){
-    .contacto-izq{
+@media screen and (max-width:800px) {
+    .contacto-izq {
         display: block;
         width: 100%;
         height: 50%;
     }
-
-    .form-der{
+    .form-der {
         width: 100%;
         height: 50%;
         display: block;
         text-align: center;
     }
-
-    .txt { 
+    .txt {
         display: block;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
     }
-
-    .btn_enviar{
+    .btn_enviar {
         display: block;
         margin-top: 50px;
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
     }
-
-    .error{
-       margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-    }
-
-    .exito{
+    .error {
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
     }
-
+    .exito {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
 }

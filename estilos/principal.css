@@ -1,124 +1,120 @@
-*{
+* {
     margin: 0;
-    padding: 0;   
-    font-family: sans-serif;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
-.principal{
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f9f9f9;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c4b6d9' fill-opacity='0.29'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.principal {
     background: url(https://sentic.co/wp-content/uploads/2019/03/Desarrollo-WEB-Sentic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-.principal .redes {
-    float: right;
-}
-
-.btn-menu{
+.btn-menu {
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    right: 30px;
+    z-index: 2;
     display: none;
 }
 
 .header .nav {
-    margin-top: 0px;
     width: 100%;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 20px 0;
     position: fixed;
-    right: 0px;
 }
 
-
-.header .nav ul{
-    overflow: hidden;
+.header .nav ul {
     list-style: none;
-    display: inline;
-}
-
-.header .nav ul .redes{
-    justify-content: right;
-    float: right;
+    display: flex;
 }
 
 .header .nav ul li {
-    float: left;
+    padding: 5px;
 }
 
-.header .nav ul li a{
+.header .nav ul li a {
     color: #fff;
     padding: 15px;
     display: block;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 
-.header .nav ul li i {
-    margin-right: 10px;
+.header .nav ul li a:hover {
+    color: #a1b9bd;
+    border-bottom: 2px solid #a1b9bd;
 }
 
-.header .nav ul li a:hover{
-    color: #003842;
-    text-decoration: line-through #003842;
-}
-
-section{
+section {
     padding: 0.1px;
 }
 
-.info{
+.info {
     text-align: center;
     margin-top: 300px;
     color: #fff;
 }
 
-.info H1{
+.info H1 {
     font-size: 40px;
 }
 
-.info p{
+.info p {
     font-size: 20px;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     .header .nav {
-        position: absolute;
-        display: inline;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+        padding: 30px;
+        opacity: .9;
+        text-align: center;
     }
-
-    .header .nav ul{
+    .header .nav.show {
+        transform: translateX(-0px);
+    }
+    .header .nav ul {
         display: block;
     }
-
-    .header .nav ul .redes li{
-        display: inline-block;
-        background: none;
-        border: none;
+    .header .nav ul li a:hover {
+        color: #233235;
+        border-bottom: 0px;
+        background: #a1b9bd;
+        border-bottom: 2px solid transparent;
     }
-
-    .header .nav ul li {
-        float: none;
-        border-bottom:1px solid rgba(255, 255, 255, 0.3);
-        background: rgba(255, 255, 255, .3);
-    }
-
     .btn-menu {
-        display: block;
-        width: 90%;
-        padding: 20px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 25px;
-        -box-sizing:border-box;
+        display: flex;
+        position: fixed;
     }
-
     .btn-menu i {
-        float: left;
-        margin-right: 20px;
+        color: rgb(2, 2, 2);
+        font-size: 40px;
     }
-
-    .info H1{
+    .info H1 {
         font-size: 25px;
     }
-
-    .info p{
+    .info p {
         font-size: 20px;
     }
 }
